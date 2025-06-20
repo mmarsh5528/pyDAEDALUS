@@ -439,7 +439,7 @@ def assign_staples_wChoices(edges, num_edges, edge_type_mat, scaf_to_edge,
         # num of 26x2 = 52 nt staples, has 4 domains
         num_four_dom_Vstap = -degree % 3
         # num of 26x3 = 78 nt staples, has 6 domains
-        num_six_dom_Vstap = (degree - 2*num_four_dom_Vstap)/3
+        num_six_dom_Vstap = (degree - 2*num_four_dom_Vstap)//3
 
         # # Identify starting position of routing
         # identify all neighbor ids that are greater than vert_ID:
